@@ -1,9 +1,6 @@
 local map = require("helpers.keys").map
 
 -- Blazingly fast way out of insert mode
-local map = require("helpers.keys").map
-
--- Blazingly fast way out of insert mode
 map("i", "jk", "<esc>")
 
 -- Quick access to some common actions
@@ -14,7 +11,7 @@ map("n", "<leader>qa", "<cmd>qa!<cr>", "Quit all")
 map("n", "<leader>dw", "<cmd>close<cr>", "Window")
 
 -- Diagnostic keymaps
-map('n', 'gx', vim.diagnostic.open_float, "Show diagnostics under cursor")
+map("n", "gx", vim.diagnostic.open_float, "Show diagnostics under cursor")
 
 -- Easier access to beginning and end of lines
 map("n", "<M-h>", "^", "Go to beginning of line")
@@ -55,12 +52,24 @@ map("v", ">", ">gv")
 map("n", "<leader>p", ":Format<CR>", "Autoformat file")
 
 -- Trouble
-map("n", "<leader>xx", function() require("trouble").open() end, "Trouble Toggle")
-map("n", "<leader>xw", function() require("trouble").open("workspace_diagnostics") end, "Trouble Workspace Diagnostics")
-map("n", "<leader>xd", function() require("trouble").open("document_diagnostics") end, "Trouble Document Diagnostics")
-map("n", "<leader>xq", function() require("trouble").open("quickfix") end, "Trouble Quickfix")
-map("n", "<leader>xl", function() require("trouble").open("loclist") end, "Trouble Loc List")
-map("n", "gR", function() require("trouble").open("lsp_references") end, "Trouble LSP References")
+map("n", "<leader>xx", function()
+	require("trouble").open()
+end, "Trouble Toggle")
+map("n", "<leader>xw", function()
+	require("trouble").open("workspace_diagnostics")
+end, "Trouble Workspace Diagnostics")
+map("n", "<leader>xd", function()
+	require("trouble").open("document_diagnostics")
+end, "Trouble Document Diagnostics")
+map("n", "<leader>xq", function()
+	require("trouble").open("quickfix")
+end, "Trouble Quickfix")
+map("n", "<leader>xl", function()
+	require("trouble").open("loclist")
+end, "Trouble Loc List")
+map("n", "gR", function()
+	require("trouble").open("lsp_references")
+end, "Trouble LSP References")
 
 -- Switch between light and dark modes
 map("n", "<leader>ut", function()
@@ -71,19 +80,18 @@ map("n", "<leader>ut", function()
 	end
 end, "Toggle between light and dark themes")
 -- Copilot mappings
-map("i", '<Tab>', function()
+map("i", "<Tab>", function()
 	if require("copilot.suggestion").is_visible() then
 		require("copilot.suggestion").accept_line()
 	else
 		vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<Tab>", true, false, true), "n", false)
 	end
-end
-, "Accept copilot suggestion")
+end, "Accept copilot suggestion")
 
 -- Clear after search
 map("n", "<leader>ur", "<cmd>nohl<cr>", "Clear highlights")
 map("n", "<leader>h", ":edit term://zsh<CR>", "Open terminal in current buffer")
-map("n", "<leader>H", ":split<CR><C-w><C-j><C-w>15-:edit term://zsh<CR>i","Open terminal in new buffer")
+map("n", "<leader>H", ":split<CR><C-w><C-j><C-w>15-:edit term://zsh<CR>i", "Open terminal in new buffer")
 
 -- C-S save
 map("n", "<C-s>", "<cmd>w<cr>", "Save file")
