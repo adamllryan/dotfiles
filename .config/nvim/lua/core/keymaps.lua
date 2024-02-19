@@ -4,8 +4,8 @@ local map = require("helpers.keys").map
 map("i", "jk", "<esc>")
 
 -- Quick access to some common actions
-map("n", "<leader>fw", "<cmd>w<cr>", "Write")
-map("n", "<leader>fa", "<cmd>wa<cr>", "Write all")
+map({ "n", "i", "v" }, "<C-s>", "<cmd>w<cr>", "Write file")
+map({ "n", "i", "v" }, "<C-S-s>", "<cmd>w<cr>", "Write all to file")
 map("n", "<leader>qq", "<cmd>q<cr>", "Quit")
 map("n", "<leader>qa", "<cmd>qa!<cr>", "Quit all")
 map("n", "<leader>dw", "<cmd>close<cr>", "Window")
@@ -94,4 +94,5 @@ map("n", "<leader>h", ":edit term://zsh<CR>", "Open terminal in current buffer")
 map("n", "<leader>H", ":split<CR><C-w><C-j><C-w>15-:edit term://zsh<CR>i", "Open terminal in new buffer")
 
 -- C-S save
-map("n", "<C-s>", "<cmd>w<cr>", "Save file")
+
+--
