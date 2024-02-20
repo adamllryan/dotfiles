@@ -106,3 +106,6 @@ map("n", "<C-->", function()
 	change_scale_factor(0.9)
 end, "Decrease scale factor")
 
+-- Map lm and to markdown
+
+map("n", "<leader>lm", "<cmd>MarkdownPreviewToggle<cr>", "Markdown Preview Toggle")

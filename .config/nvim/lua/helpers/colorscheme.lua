@@ -26,11 +26,11 @@ local schemes = {
 local colorscheme = get_if_available(schemes)
 
 -- Neovide configuration
-
-vim.g.neovide_remember_window_size = true
-vim.g.neovide_cursor_vfx_mode = "torpedo"
-vim.g.neovide_cursor_animation_length = 0.06
-vim.g.neovide_transparency = 0.985
-vim.g.neovide_cursor_trail_size = 0.85
-
+if vim.g.neovide then
+	vim.g.neovide_remember_window_size = true
+	vim.g.neovide_cursor_vfx_mode = "torpedo"
+	vim.g.neovide_cursor_animation_length = 0.06
+	vim.g.neovide_transparency = 0.985
+	vim.g.neovide_cursor_trail_size = 0.85
+end
 return colorscheme
