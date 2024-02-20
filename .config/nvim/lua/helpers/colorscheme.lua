@@ -18,9 +18,9 @@ local function get_if_available(names, opts)
 end
 
 -- Hierarchy of colorschemes to try
-schemes = {
-	--[1] = "nordfox",
-	[1] = "dawnfox",
+local schemes = {
+	[1] = "nordfox",
+	--[1] = "dawnfox",
 	[2] = "flexoki",
 }
 local colorscheme = get_if_available(schemes)

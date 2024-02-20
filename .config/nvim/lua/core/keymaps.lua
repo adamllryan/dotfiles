@@ -95,4 +95,14 @@ map("n", "<leader>H", ":split<CR><C-w><C-j><C-w>15-:edit term://zsh<CR>i", "Open
 
 -- C-S save
 
---
+vim.g.neovide_scale_factor = 1.0
+local change_scale_factor = function(delta)
+	vim.g.neovide_scale_factor = vim.g.neovide_scale_factor * delta
+end
+map("n", "<C-=>", function()
+	change_scale_factor(1.1)
+end, "Increase scale factor")
+map("n", "<C-->", function()
+	change_scale_factor(0.9)
+end, "Decrease scale factor")
+
