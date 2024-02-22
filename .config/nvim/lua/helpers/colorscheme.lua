@@ -30,4 +30,5 @@ if vim.g.neovide then
 	vim.g.neovide_transparency = 0.985
 	vim.g.neovide_cursor_trail_size = 0.85
 end
+
 return colorscheme

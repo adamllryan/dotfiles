@@ -38,3 +38,10 @@ end
 -- Set other options
 local colorscheme = require("helpers.colorscheme")
 vim.cmd.colorscheme(colorscheme)
+
+vim.cmd([[highlight IndentBlanklineIndent1 guifg=#70363B gui=nocombine]])
+vim.cmd([[highlight IndentBlanklineIndent2 guifg=#73603E gui=nocombine]])
+vim.cmd([[highlight IndentBlanklineIndent3 guifg=#4C623D gui=nocombine]])
+vim.cmd([[highlight IndentBlanklineIndent4 guifg=#2B5B61 gui=nocombine]])
+vim.cmd([[highlight IndentBlanklineIndent5 guifg=#315878 gui=nocombine]])
+vim.cmd([[highlight IndentBlanklineIndent6 guifg=#633C6F gui=nocombine]])

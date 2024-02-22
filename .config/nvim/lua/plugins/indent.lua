@@ -1,4 +1,4 @@
-vim.opt.termguicolors = true
+vim.opt.termguicolors = false
 vim.cmd([[highlight IndentBlanklineIndent1 guifg=#70363B gui=nocombine]])
 vim.cmd([[highlight IndentBlanklineIndent2 guifg=#73603E gui=nocombine]])
 vim.cmd([[highlight IndentBlanklineIndent3 guifg=#4C623D gui=nocombine]])
