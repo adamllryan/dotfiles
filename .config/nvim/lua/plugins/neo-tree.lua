@@ -16,6 +16,8 @@ return {
 						["<space>"] = {
 							"close_window",
 						},
+						["s"] = {},
+						["S"] = {},
 					},
 				},
 			})

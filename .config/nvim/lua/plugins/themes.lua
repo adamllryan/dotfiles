@@ -59,5 +59,10 @@ return {
 	},
 	{
 		"mcchrish/zenbones.nvim",
+		dependencies = { "rktjmp/lush.nvim" },
 	},
+	{
+		"ntk148v/habamax.nvim",
+	},
+	{ "bluz71/vim-nightfly-colors", name = "nightfly", lazy = false, priority = 1000 },
 }
