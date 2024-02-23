@@ -17,6 +17,9 @@ end
 
 -- Hierarchy of colorschemes to try
 local schemes = {
+	"cyberpunk",
+	"kanagawa-wave",
+	"terafox",
 	"oxocarbon",
 	"nordfox",
 }
