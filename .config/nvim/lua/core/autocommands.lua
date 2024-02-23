@@ -5,7 +5,7 @@ local ui = group("UI")
 
 -- Set indent blankline colors when theme changed
 
-cmd({ "ColorScheme" }, "*", ui, function()
+cmd({ "ColorScheme", "UIEnter" }, "*", ui, function()
 	vim.cmd([[highlight IndentBlanklineIndent1 guifg=#70363B gui=nocombine]])
 	vim.cmd([[highlight IndentBlanklineIndent2 guifg=#73603E gui=nocombine]])
 	vim.cmd([[highlight IndentBlanklineIndent3 guifg=#4C623D gui=nocombine]])

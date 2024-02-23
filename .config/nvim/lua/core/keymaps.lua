@@ -82,7 +82,7 @@ end, "Toggle between light and dark themes")
 
 -- Copilot mappings
 
-map("i", "<S-Tab>", function()
+map("i", "<S-CR>", function()
 	if require("copilot.suggestion").is_visible() then
 		require("copilot.suggestion").accept_line()
 	else

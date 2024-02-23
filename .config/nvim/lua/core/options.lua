@@ -29,6 +29,7 @@ local opts = {
 	winminwidth = 5, -- Minimum window width
 	wrap = false, -- Disable line wrap
 	linebreak = false,
+	listchars = "tab:»·,nbsp:+,trail:·,extends:→,precedes:←,eol:↲,space:·",
 }
 
 -- Set options from table
