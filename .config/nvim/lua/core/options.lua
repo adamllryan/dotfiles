@@ -3,7 +3,7 @@ local opts = {
 	tabstop = 4,
 	expandtab = true,
 	termguicolors = true,
-	autowrite = true, -- Enable auto write
+	autowrite = false, -- Enable auto write
 	clipboard = "unnamedplus", -- Sync with system clipboard
 	conceallevel = 3, -- Hide * markup for bold and italic
 	confirm = true, -- Confirm to save changes before exiting modified buffer
@@ -27,22 +27,24 @@ local opts = {
 	updatetime = 200, -- Save swap file and trigger CursorHold
 	wildmode = "longest:full,full", -- Command-line completion mode
 	winminwidth = 5, -- Minimum window width
-	wrap = true, -- Disable line wrap
-	linebreak = true,
+	wrap = false, -- Disable line wrap
+	linebreak = false,
 }
 
 -- Set options from table
+
 for opt, val in pairs(opts) do
 	vim.o[opt] = val
 end
 
--- Set other options
-local colorscheme = require("helpers.colorscheme")
-vim.cmd.colorscheme(colorscheme)
+-- Set colorscheme from hierarchy list
 
-vim.cmd([[highlight IndentBlanklineIndent1 guifg=#70363B gui=nocombine]])
-vim.cmd([[highlight IndentBlanklineIndent2 guifg=#73603E gui=nocombine]])
-vim.cmd([[highlight IndentBlanklineIndent3 guifg=#4C623D gui=nocombine]])
-vim.cmd([[highlight IndentBlanklineIndent4 guifg=#2B5B61 gui=nocombine]])
-vim.cmd([[highlight IndentBlanklineIndent5 guifg=#315878 gui=nocombine]])
-vim.cmd([[highlight IndentBlanklineIndent6 guifg=#633C6F gui=nocombine]])
+local schemes = {
+	"cyberpunk",
+	"kanagawa-wave",
+	"terafox",
+	"oxocarbon",
+	"nordfox",
+}
+
+require("helpers.colorscheme").set_color(schemes)

@@ -1,4 +1,13 @@
--- Git related plugins
+--[[
+
+  	Plugins for git integration
+
+	1. lewis6991/gitsigns.nvim
+	2. akinsho/git-conflict.nvim
+	3. tpope/vim-fugitive
+
+--]]
+
 return {
 	{
 		"lewis6991/gitsigns.nvim",
@@ -22,10 +31,10 @@ return {
 	},
 	{
 		"tpope/vim-fugitive",
-		config = function ()
+		config = function()
 			local map = require("helpers.keys").map
 			map("n", "<leader>ga", "<cmd>Git add %<cr>", "Stage the current file")
 			map("n", "<leader>gb", "<cmd>Git blame<cr>", "Show the blame")
-		end
-	}
+		end,
+	},
 }

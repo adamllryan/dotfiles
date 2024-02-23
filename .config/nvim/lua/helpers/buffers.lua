@@ -1,9 +1,11 @@
 local M = {}
+
 local function noop()
 	print("NOOP")
 end
 
 local ok, close_buffers = pcall(require, "close_buffers")
+
 if ok then
 	M.delete_this = function()
 		close_buffers.delete({ type = "this" })

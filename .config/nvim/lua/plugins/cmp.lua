@@ -1,4 +1,11 @@
--- Autocompletion
+--[[
+
+  Cmp
+
+  A completion plugin that is designed to be fast and easy to use.
+
+--]]
+
 return {
 	{
 		"hrsh7th/nvim-cmp",
@@ -14,9 +21,7 @@ return {
 		config = function()
 			local cmp = require("cmp")
 			local luasnip = require("luasnip")
-
 			require("luasnip/loaders/from_vscode").lazy_load()
-
 			local kind_icons = {
 				Text = "",
 				Method = "m",
@@ -44,7 +49,6 @@ return {
 				Operator = "",
 				TypeParameter = "",
 			}
-
 			cmp.setup({
 				snippet = {
 					expand = function(args)
