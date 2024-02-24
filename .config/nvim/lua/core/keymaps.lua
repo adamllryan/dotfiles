@@ -115,7 +115,3 @@ end, "Decrease scale factor")
 -- Map lm and to markdown
 
 map("n", "<leader>lm", "<cmd>MarkdownPreviewToggle<cr>", "Markdown Preview Toggle")
-
--- Delimit selected
-
-map("v", "<C-i>", "ii", "Delimit selected with i")
