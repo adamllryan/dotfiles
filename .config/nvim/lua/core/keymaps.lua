@@ -6,8 +6,8 @@ map("n", "<leader>L", require("lazy").show, "Show Lazy")
 
 -- Quick access to some common actions
 
-map({ "n", "i", "v" }, "<C-s>", "<cmd>w<cr>", "Write file")
-map({ "n", "i", "v" }, "<C-S-s>", "<cmd>w<cr>", "Write all to file")
+map({ "n", "i", "v" }, "<C-s>", "<cmd>w<cr><esc>", "Write file")
+map({ "n", "i", "v" }, "<C-S-s>", "<cmd>w<cr><esc>", "Write all to file")
 map("n", "<leader>dw", "<cmd>close<cr>", "Window")
 
 -- Diagnostic keymaps
