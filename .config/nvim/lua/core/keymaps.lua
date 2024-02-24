@@ -115,3 +115,7 @@ end, "Decrease scale factor")
 -- Map lm and to markdown
 
 map("n", "<leader>lm", "<cmd>MarkdownPreviewToggle<cr>", "Markdown Preview Toggle")
+
+-- Clear last search
+
+map("n", "<C-/>", "<cmd>nohlsearch<cr>", "Clear last search")
