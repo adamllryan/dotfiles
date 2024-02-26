@@ -28,7 +28,7 @@ end)
 
 local ft = group("Filetype")
 
-cmd({ "BufEnter", "FileType" }, "markdown", ft, function()
+cmd({ "BufEnter", "FileType" }, { "markdown", "tex" }, ft, function()
 	vim.cmd([[setlocal linebreak]])
 	vim.cmd([[setlocal wrap]])
 	vim.cmd([[set cursorlineopt=number,screenline]])
