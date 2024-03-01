@@ -23,10 +23,13 @@ cmd({ "UIEnter" }, "*", ui, function()
 		vim.g.neovide_cursor_animation_length = 0.06
 		vim.g.neovide_transparency = 0.985
 		vim.g.neovide_cursor_trail_size = 0.85
+		vim.g.neovide_scroll_animation_length = 0.2
 	end
 end)
 
 local ft = group("Filetype")
+
+-- Set local markdown text wrap config on enter/change
 
 cmd({ "BufEnter", "FileType" }, { "markdown", "tex" }, ft, function()
 	vim.cmd([[setlocal linebreak]])
@@ -34,4 +37,5 @@ cmd({ "BufEnter", "FileType" }, { "markdown", "tex" }, ft, function()
 	vim.cmd([[set cursorlineopt=number,screenline]])
 	vim.cmd([[noremap <expr> j v:count ? 'j' : 'gj']])
 	vim.cmd([[noremap <expr> k v:count ? 'k' : 'gk']])
+	vim.cmd([[setlocal conceallevel=1]])
 end)

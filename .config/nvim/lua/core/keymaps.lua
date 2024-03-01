@@ -119,3 +119,7 @@ map("n", "<leader>lm", "<cmd>MarkdownPreviewToggle<cr>", "Markdown Preview Toggl
 -- Clear last search
 
 map("n", "<C-/>", "<cmd>nohlsearch<cr>", "Clear last search")
+
+-- Obsidian Links Keymap
+
+map({ "n", "v" }, "<C-LeftMouse><cr>", "<cmd>ObsidianFollowLink<cr>", "Follow Obsidian Link")
