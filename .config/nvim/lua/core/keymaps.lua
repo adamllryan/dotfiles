@@ -85,8 +85,8 @@ end, "Toggle between light and dark themes")
 map("i", "<S-CR>", function()
 	if require("copilot.suggestion").is_visible() then
 		require("copilot.suggestion").accept_line()
-	else
-		vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<Tab>", true, false, true), "n", false)
+		print("Accepted suggestion")
+	
 	end
 end, "Accept copilot suggestion")
 
@@ -123,3 +123,5 @@ map("n", "<C-/>", "<cmd>nohlsearch<cr>", "Clear last search")
 -- Obsidian Links Keymap
 
 map({ "n", "v" }, "<C-LeftMouse><cr>", "<cmd>ObsidianFollowLink<cr>", "Follow Obsidian Link")
+
+

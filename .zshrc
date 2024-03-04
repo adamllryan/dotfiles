@@ -7,3 +7,7 @@ alias notes="neovide ~/notes"
 alias neovide="neovide ."
 alias edit="neovide"
 alias nc="edit ~/.config/nvim/lua/"
+
+export PATH="/home/adam/.cargo/bin/:$PATH"
+
+config pull
