@@ -41,9 +41,9 @@ end
 -- Set colorscheme from hierarchy list
 
 local schemes = {
-	"cyberpunk",
 	"kanagawa-wave",
 	"terafox",
+	"cyberpunk",
 	"oxocarbon",
 	"nordfox",
 }

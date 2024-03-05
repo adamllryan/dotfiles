@@ -9,5 +9,8 @@ alias edit="neovide"
 alias nc="edit ~/.config/nvim/lua/"
 
 export PATH="/home/adam/.cargo/bin/:$PATH"
+export JFLEX_DIR=$HOME/jflex-1.7.0 
+export CUP_DIR=$HOME/cup
 
 config pull
+
