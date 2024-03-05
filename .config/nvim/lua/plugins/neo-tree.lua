@@ -21,12 +21,6 @@ return {
 					},
 				},
 			})
-			require("helpers.keys").map(
-				{ "n", "v" },
-				"<leader>e",
-				"<cmd>NeoTreeFocusToggle<cr>",
-				"Toggle file explorer"
-			)
 		end,
 	},
 }

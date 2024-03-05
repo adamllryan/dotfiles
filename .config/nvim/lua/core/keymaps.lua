@@ -86,7 +86,6 @@ map("i", "<S-CR>", function()
 	if require("copilot.suggestion").is_visible() then
 		require("copilot.suggestion").accept_line()
 		print("Accepted suggestion")
-	
 	end
 end, "Accept copilot suggestion")
 
@@ -124,4 +123,16 @@ map("n", "<C-/>", "<cmd>nohlsearch<cr>", "Clear last search")
 
 map({ "n", "v" }, "<C-LeftMouse><cr>", "<cmd>ObsidianFollowLink<cr>", "Follow Obsidian Link")
 
+-- Git
 
+map("n", "<leader>ga", "<cmd>Git add %<cr>", "Stage the current file")
+map("n", "<leader>gb", "<cmd>Git blame<cr>", "Show the blame")
+
+-- Illuminate
+
+map("n", "<leader>ti", "<cmd>IlluminateToggle<CR>", "Toggle Illuminate")
+map("n", "<leader>tf", require("illuminate").toggle_freeze_buf, "Freeze Illuminate")
+
+-- Neotree
+
+map({ "n", "v" }, "<leader>e", "<cmd>NeoTreeFocusToggle<cr>", "Toggle file explorer")
