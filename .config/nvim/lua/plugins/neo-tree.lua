@@ -11,7 +11,6 @@ return {
 		config = function()
 			require("neo-tree").setup({
 				window = {
-
 					mappings = {
 						["<space>"] = {
 							"close_window",

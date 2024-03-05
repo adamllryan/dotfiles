@@ -1,11 +1,7 @@
 --[[
-
-  Cmp
-
-  A completion plugin that is designed to be fast and easy to use.
-
+	Cmp
+	A completion plugin that is designed to be fast and easy to use.
 --]]
-
 return {
 	"hrsh7th/nvim-cmp",
 	dependencies = {

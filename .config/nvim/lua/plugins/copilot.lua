@@ -1,7 +1,6 @@
 --[[
-  Copilot
-
-  Copilot is a plugin that provides AI-powered code completions in Neovim. It is a commercial product, but it is free to use for open source projects. It is a great tool for writing code quickly and efficiently.
+	Copilot
+	Copilot is a plugin that provides AI-powered code completions in Neovim. It is a commercial product, but it is free to use for open source projects. It is a great tool for writing code quickly and efficiently.
 ]]
 return {
 	-- custom config which piggybacks on the copilot extras in lazy.lua.

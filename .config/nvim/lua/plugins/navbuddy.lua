@@ -1,8 +1,6 @@
 --[[
-
-  Navbuddy
-
-  Popup display that helps find and navigate to symbols in the current buffer.
+	Navbuddy
+	Popup display that helps find and navigate to symbols in the current buffer.
 ]]
 
 return {

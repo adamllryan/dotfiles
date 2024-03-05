@@ -5,7 +5,6 @@ return {
 			require("mini.bracketed").setup()
 		end,
 	},
-
 	{
 		"echasnovski/mini.move",
 		config = function()
@@ -19,7 +18,6 @@ return {
 			})
 		end,
 	},
-
 	{
 		"echasnovski/mini.splitjoin",
 		version = false,

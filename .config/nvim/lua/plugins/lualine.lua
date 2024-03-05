@@ -32,14 +32,6 @@ return {
 					},
 				},
 				lualine_c = { "diff", "buffers", { "filename", file_status = true, path = 1 } },
-				-- lualine_c = { "diff" }, -- lualine_c = { { "filename", file_status = true, path = 1 } },
-				-- lualine_c = { "fileformat" },
-				--lualine_x = {
-				--  {
-				--    require("lazy.status").updates,
-				--   cond = require("lazy.status").has_updates,
-				-- },
-				--},
 				lualine_x = {
 					"encoding",
 					"filesize",
