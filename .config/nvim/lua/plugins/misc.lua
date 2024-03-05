@@ -1,4 +1,3 @@
--- Miscelaneous fun stuff
 return {
 	-- Comment with haste
 	{
@@ -12,5 +11,5 @@ return {
 			preserve_window_layout = { "this", "nameless" },
 		},
 	},
-	"tpope/vim-sleuth", -- Detect tabstop and shiftwidth automatically
+	"tpope/vim-sleuth", -- Detect tabstop and shiftwidth automatically (indentation)
 }

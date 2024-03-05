@@ -1,3 +1,8 @@
+--[[
+-- UFO folding
+-- UFO folding is a folding plugin that uses treesitter to fold code.
+-- Use zc and zo to close and open fold of nested scope. 
+--]]
 return {
 	-- UFO folding
 	{
