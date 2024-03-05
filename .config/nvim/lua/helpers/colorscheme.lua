@@ -1,4 +1,4 @@
-local function get_if_available(names, opts)
+local function get_if_available(names)
 	for _, name in ipairs(names) do
 		local vim_ok, _ = pcall(vim.cmd.colorscheme, name)
 		if vim_ok then

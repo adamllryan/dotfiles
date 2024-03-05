@@ -11,8 +11,8 @@ return {
 					require("statuscol").setup({
 						relculright = true,
 						segments = {
-							{ text = { builtin.foldfunc },      click = "v:lua.ScFa" },
-							{ text = { "%s" },                  click = "v:lua.ScSa" },
+							{ text = { builtin.foldfunc }, click = "v:lua.ScFa" },
+							{ text = { "%s" }, click = "v:lua.ScSa" },
 							{ text = { builtin.lnumfunc, " " }, click = "v:lua.ScLa" },
 						},
 					})
@@ -24,7 +24,6 @@ return {
 			provider_selector = function()
 				return { "treesitter", "indent" }
 			end,
-
 		},
 
 		init = function()

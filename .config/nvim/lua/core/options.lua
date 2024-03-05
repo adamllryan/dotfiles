@@ -1,7 +1,8 @@
 local opts = {
 	shiftwidth = 4,
 	tabstop = 4,
-	expandtab = true,
+	expandtab = 4,
+	softtabstop = 4,
 	termguicolors = true,
 	autowrite = false, -- Enable auto write
 	clipboard = "unnamedplus", -- Sync with system clipboard

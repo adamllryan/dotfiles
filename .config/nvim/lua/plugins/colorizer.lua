@@ -1,10 +1,10 @@
 --[[
-  Colorizer
+    Colorizer
 
-  This plugin is used to colorize the color codes in the code. It is useful for
-  the web developers who work with the color codes in the code.
+    This plugin is used to colorize the color codes in the code. It is useful for
+    the web developers who work with the color codes in the code.
 
-  @require NvChad/nvim-colorizer.lua
+    @require NvChad/nvim-colorizer.lua
 --]]
 return {
 	{

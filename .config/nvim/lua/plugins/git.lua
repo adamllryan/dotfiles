@@ -1,10 +1,10 @@
 --[[
 
-  	Plugins for git integration
+Plugins for git integration
 
-	1. lewis6991/gitsigns.nvim
-	2. akinsho/git-conflict.nvim
-	3. tpope/vim-fugitive
+1. lewis6991/gitsigns.nvim
+2. akinsho/git-conflict.nvim
+3. tpope/vim-fugitive
 
 --]]
 
