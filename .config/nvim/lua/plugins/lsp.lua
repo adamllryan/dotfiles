@@ -25,10 +25,10 @@ return {
 			require("helpers.keys").map("n", "<leader>M", "<cmd>Mason<cr>", "Show Mason")
 
 			-- Neodev setup before LSP config
-			require("neodev").setup()
+			require("neodev").setup({})
 
 			-- Turn on LSP status information
-			require("fidget").setup()
+			require("fidget").setup({})
 
 			-- Set up cool signs for diagnostics
 			local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }

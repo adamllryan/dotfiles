@@ -1,5 +1,4 @@
-return 
-{
+return {
 	"folke/noice.nvim",
 	config = function()
 		require("noice").setup({
@@ -26,21 +25,10 @@ return
 			},
 			severity_sort = true,
 			severity_icon = true,
-			severity_colors = true,
 			severity_symbols = true,
-			severity_names = true,
-			severity_alphabetic = true,
 			severity_asc = true,
 			severity_desc = true,
 			severity_ignore = {},
-			severity_highlight = {},
-			severity_names = {
-				error = "Error",
-				warning = "Warning",
-				info = "Info",
-				hint = "Hint",
-				other = "Other",
-			},
 			severity_colors = {
 				error = "#db4b4b",
 				warning = "#e0af68",
@@ -63,40 +51,6 @@ return
 				other = "Other",
 			},
 			severity_alphabetic = true,
-			severity_asc = true,
-			severity_desc = true,
-			severity_ignore = {},
-			severity_highlight = {},
-			severity_names = {
-				error = "Error",
-				warning = "Warning",
-				info = "Info",
-				hint = "Hint",
-				other = "Other",
-			},
-			severity_colors = {
-				error = "#db4b4b",
-				warning = "#e0af68",
-				info = "#0db9d7",
-				hint = "#10B981",
-				other = "#7C3AED",
-			},
-			severity_highlight = {
-				error = "LspDiagnosticsDefaultError",
-				warning = "LspDiagnosticsDefaultWarning",
-				info = "LspDiagnosticsDefaultInformation",
-				hint = "LspDiagnosticsDefaultHint",
-				other = "LspDiagnosticsDefaultOther",
-			},
-			severity_names = {
-				error = "Error",
-				warning = "Warning",
-				info = "Info",
-				hint = "Hint",
-				other = "Other",
-			},
-			severity_alphabetic = true,	
 		})
 	end,
 }
-	
