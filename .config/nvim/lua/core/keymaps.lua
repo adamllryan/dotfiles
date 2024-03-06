@@ -136,3 +136,12 @@ map("n", "<leader>tf", require("illuminate").toggle_freeze_buf, "Freeze Illumina
 -- Neotree
 
 map({ "n", "v" }, "<leader>e", "<cmd>NeoTreeFocusToggle<cr>", "Toggle file explorer")
+
+-- UFO
+
+map("n", "zR", function()
+	require("ufo").openAllFolds()
+end, "Open all folds")
+map("n", "zM", function()
+	require("ufo").closeAllFolds()
+end, "Close all folds")
