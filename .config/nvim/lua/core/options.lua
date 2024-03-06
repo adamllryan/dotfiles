@@ -1,7 +1,7 @@
 local opts = {
 	shiftwidth = 4,
 	tabstop = 4,
-	expandtab = 4,
+	expandtab = true,
 	softtabstop = 4,
 	termguicolors = true,
 	autowrite = false, -- Enable auto write
