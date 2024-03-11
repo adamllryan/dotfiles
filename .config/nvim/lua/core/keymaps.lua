@@ -145,3 +145,9 @@ end, "Open all folds")
 map("n", "zM", function()
 	require("ufo").closeAllFolds()
 end, "Close all folds")
+
+-- Toggle Term
+
+map("n", "t", "<cmd>ToggleTerm direction=horizontal<cr>", "Toggle terminal")
+map("t", "<esc>", "<C-\\><C-n>", "Exit terminal mode")
+map({ "t", "n" }, "<C-\\>", "<cmd>ToggleTerm direction=float<cr>", "Toggle terminal")

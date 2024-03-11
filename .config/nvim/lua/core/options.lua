@@ -49,6 +49,8 @@ local schemes = {
 	"nordfox",
 }
 
+vim.cmd("set background=dark")
+
 require("helpers.colorscheme").set_color(schemes)
 
 -- set diagnostic virtual text
