@@ -6,11 +6,8 @@ return {
 				theme = vim.g.colors_name,
 				component_separators = "",
 				section_separators = { left = "", right = "" },
-				-- section_separators = { left = "", right = "" },
 				disabled_filetypes = {
-					statusline = {
-						"neo%-tree",
-					},
+					statusline = {},
 					winbar = {},
 				},
 				ignore_focus = {},

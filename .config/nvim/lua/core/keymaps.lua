@@ -31,9 +31,9 @@ map("n", "<S-Right>", "<C-w><S-l>", "Move window to the right")
 -- Deleting buffers
 
 local buffers = require("helpers.buffers")
-map("n", "<leader>db", buffers.delete_this, "Current buffer")
-map("n", "<leader>do", buffers.delete_others, "Other buffers")
-map("n", "<leader>da", buffers.delete_all, "All buffers")
+map("n", "db", buffers.delete_this, "Current buffer")
+map("n", "do", buffers.delete_others, "Other buffers")
+map("n", "dA", buffers.delete_all, "All buffers")
 
 -- Navigate buffers
 
