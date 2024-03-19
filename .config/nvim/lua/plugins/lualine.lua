@@ -3,22 +3,17 @@ return {
 	config = function()
 		require("lualine").setup({
 			options = {
-				-- theme = "doom-one",
 				theme = vim.g.colors_name,
-				component_separators = "|",
+				component_separators = "",
 				section_separators = { left = "", right = "" },
 				-- section_separators = { left = "", right = "" },
 				disabled_filetypes = {
 					statusline = {
-						"NvimTree",
+						"neo%-tree",
 					},
-					winbar = {
-						"NvimTree",
-					},
+					winbar = {},
 				},
-				ignore_focus = {
-					"NvimTree",
-				},
+				ignore_focus = {},
 			},
 			sections = {
 				lualine_a = {
@@ -31,7 +26,7 @@ return {
 						right_padding = 2,
 					},
 				},
-				lualine_c = { "diff", "buffers", { "filename", file_status = true, path = 1 } },
+				lualine_c = { "diff", { "filename", file_status = true, path = 1 } },
 				lualine_x = {
 					"encoding",
 					"filesize",
@@ -53,6 +48,7 @@ return {
 				lualine_y = {},
 				lualine_z = { "location" },
 			},
+			extensions = { "neo-tree", "lazy" },
 		})
 	end,
 }
