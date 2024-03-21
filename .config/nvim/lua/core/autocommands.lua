@@ -12,6 +12,10 @@ cmd({ "ColorScheme", "UIEnter" }, "*", ui, function()
 	vim.cmd([[highlight IndentBlanklineIndent4 guifg=#2B5B61 gui=nocombine]])
 	vim.cmd([[highlight IndentBlanklineIndent5 guifg=#315878 gui=nocombine]])
 	vim.cmd([[highlight IndentBlanklineIndent6 guifg=#633C6F gui=nocombine]])
+	vim.cmd([[highlight Headline1 guibg=#1e2718]])
+	vim.cmd([[highlight Headline2 guibg=#21262d]])
+	vim.cmd([[highlight CodeBlock guibg=#1c1c1c]])
+	vim.cmd([[highlight Dash guibg=#D19A66 gui=bold]])
 end)
 
 -- Set Neovide options if available

@@ -63,4 +63,9 @@ return {
 	"shaunsingh/moonlight.nvim",
 	"akai54/2077.nvim",
 	"thedenisnikulin/vim-cyberpunk",
+	"navarasu/onedark.nvim",
+	"rmehri01/onenord.nvim",
+	"bluz71/vim-moonfly-colors",
+	"scottmckendry/cyberdream.nvim",
+	"mhartington/oceanic-next",
 }
