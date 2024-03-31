@@ -50,6 +50,7 @@ return {
 			})
 		end,
 	},
+	{ "rose-pine/neovim", name = "rose-pine" },
 	"kepano/flexoki-neovim",
 	"nyoom-engineering/oxocarbon.nvim",
 	{

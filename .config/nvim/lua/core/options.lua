@@ -16,7 +16,7 @@ local opts = {
 	number = true, -- Print line number
 	pumblend = 10, -- Popup blend
 	pumheight = 10, -- Maximum number of entries in a popup
-	relativenumber = true, -- Relative line numbers
+	relativenumber = false, -- Relative line numbers
 	scrolloff = 4, -- Lines of context
 	shiftround = true, -- Round indent
 	showmode = false, -- Dont show mode since we have a statusline
@@ -30,7 +30,7 @@ local opts = {
 	winminwidth = 5, -- Minimum window width
 	wrap = false, -- Disable line wrap
 	linebreak = false,
-	listchars = "tab:»·,nbsp:+,trail:·,extends:→,precedes:←,eol:↲,space:·",
+	listchars = "tab:» ,nbsp:+,trail:·,extends:→,precedes:←,eol:↲,space:·",
 }
 
 -- Set options from table

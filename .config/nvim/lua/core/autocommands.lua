@@ -3,7 +3,7 @@ local group = require("helpers.auto").group
 
 local ui = group("UI")
 
--- Set indent blankline colors when theme changed
+-- Set colors on colorscheme change
 
 cmd({ "ColorScheme", "UIEnter" }, "*", ui, function()
 	vim.cmd([[highlight IndentBlanklineIndent1 guifg=#70363B gui=nocombine]])
@@ -42,4 +42,17 @@ cmd({ "BufEnter", "FileType" }, { "markdown", "tex" }, ft, function()
 	vim.cmd([[noremap <expr> j v:count ? 'j' : 'gj']])
 	vim.cmd([[noremap <expr> k v:count ? 'k' : 'gk']])
 	vim.cmd([[setlocal conceallevel=1]])
+end)
+
+-- Debug Breakpoints for each filetype
+
+-- Python
+
+cmd({ "BufEnter", "FileType" }, "python", ft, function()
+	local dap = require("dap")
+	dap.adapters.python = {
+		type = "executable",
+		command = os.getenv("HOME") .. "/.virtualenvs/tools/bin/python",
+		args = { "-m", "debugpy.adapter" },
+	}
 end)
