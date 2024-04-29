@@ -46,6 +46,19 @@ cmd({ "BufEnter", "FileType" }, { "markdown", "tex" }, ft, function()
 	vim.cmd([[noremap <expr> j v:count ? 'j' : 'gj']])
 	vim.cmd([[noremap <expr> k v:count ? 'k' : 'gk']])
 	vim.cmd([[setlocal conceallevel=1]])
+
+	-- Handle large files by disabling treesitter functions etc
+
+	if vim.fn.getfsize(vim.fn.expand("%")) > 1000000 then
+		vim.cmd([[setlocal syntax=clear]])
+		vim.cmd([[setlocal foldmethod=manual]])
+		vim.cmd([[setlocal foldlevel=0]])
+		vim.cmd([[setlocal foldcolumn=0]])
+		vim.cmd([[setlocal foldenable=false]])
+		vim.cmd([[setlocal filetype=of]])
+		vim.cmd([[setlocal noswapfile]])
+		vim.cmd([[setlocal noloadplugins]])
+	end
 end)
 
 -- Debug Breakpoints for each filetype
