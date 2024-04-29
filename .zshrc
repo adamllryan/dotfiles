@@ -14,3 +14,6 @@ export CUP_DIR=$HOME/cup
 
 config pull
 
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
+
