@@ -136,7 +136,7 @@ map("n", "<leader>tf", require("illuminate").toggle_freeze_buf, "Freeze Illumina
 
 -- Neotree
 
-map({ "n", "v" }, "<tab>", "<cmd>NeoTreeFloatToggle<cr>", "Toggle file explorer")
+map({ "n", "v" }, "<tab>", "<cmd>Neotree toggle float last<cr>", "Toggle file explorer")
 
 -- UFO
 
