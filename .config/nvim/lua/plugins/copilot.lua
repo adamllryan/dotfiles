@@ -19,6 +19,7 @@ return {
 					enabled = true,
 					auto_trigger = true,
 					accept = false, -- disable built-in keymapping
+					debounce = 75,
 				},
 				filetypes = {
 					markdown = true,

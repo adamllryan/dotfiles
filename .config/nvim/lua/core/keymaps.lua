@@ -9,7 +9,8 @@ map("n", "<leader>L", require("lazy").show, "Show Lazy")
 map({ "n", "i", "v" }, "<C-s>", "<cmd>w<cr><esc>", "Write file")
 map({ "n", "i", "v" }, "<C-S-s>", "<cmd>w<cr><esc>", "Write all to file")
 map("n", "<leader>dw", "<cmd>close<cr>", "Window")
-
+map({ "i", "v", "t" }, "jk", "<esc>", "Exit insert mode")
+map({ "i", "v", "t" }, "kj", "<esc>", "Exit insert mode")
 -- Diagnostic keymaps
 
 map("n", "gx", vim.diagnostic.open_float, "Show diagnostics under cursor")
@@ -135,7 +136,7 @@ map("n", "<leader>tf", require("illuminate").toggle_freeze_buf, "Freeze Illumina
 
 -- Neotree
 
-map({ "n", "v" }, "<leader>e", "<cmd>NeoTreeFocusToggle<cr>", "Toggle file explorer")
+map({ "n", "v" }, "<tab>", "<cmd>NeoTreeFloatToggle<cr>", "Toggle file explorer")
 
 -- UFO
 

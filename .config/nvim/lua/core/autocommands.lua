@@ -58,6 +58,9 @@ cmd({ "BufEnter", "FileType" }, { "markdown", "tex" }, ft, function()
 		vim.cmd([[setlocal filetype=of]])
 		vim.cmd([[setlocal noswapfile]])
 		vim.cmd([[setlocal noloadplugins]])
+
+		-- Message to user saying treesitter is disabled
+		vim.cmd([[echo "File is too large, limiting functions"]])
 	end
 end)
 
