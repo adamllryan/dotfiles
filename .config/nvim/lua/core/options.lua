@@ -28,8 +28,8 @@ local opts = {
 	updatetime = 200, -- Save swap file and trigger CursorHold
 	wildmode = "longest:full,full", -- Command-line completion mode
 	winminwidth = 5, -- Minimum window width
-	wrap = false, -- Disable line wrap
-	linebreak = false,
+	wrap = true, -- Disable line wrap
+	linebreak = true,
 	listchars = "tab:| ,nbsp:+,trail:·,extends:→,precedes:←,eol:↲,space:·",
 }
 
